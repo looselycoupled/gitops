@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simpleapp
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/looselycoupled/gitops
+    targetRevision: HEAD
+    path: charts/simpleapp
+    helm:
+      valueFiles:
+      - environments/minikube.yaml
+  destination:
+    namespace: example
+  clusterSelector:
+    matchLabels:
+      alias: minikube
+  syncPolicy:
+    automated: 
+      prune: true
+      selfHeal: true
