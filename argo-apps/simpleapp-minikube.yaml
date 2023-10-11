@@ -13,10 +13,8 @@ spec:
       valueFiles:
       - environments/minikube.yaml
   destination:
+    server: https://kubernetes.default.svc
     namespace: example
-  clusterSelector:
-    matchLabels:
-      alias: minikube
   syncPolicy:
     automated: 
       prune: true
