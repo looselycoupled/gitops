@@ -1,0 +1,5 @@
+env:
+  - name: CONTENT
+    value: "Minkube!"
+  - name: VERSION
+    value: "v1.0"
