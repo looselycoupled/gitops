@@ -1,0 +1,5 @@
+env:
+  - name: CONTENT
+    value: "Testing!"
+  - name: VERSION
+    value: "v1.0"

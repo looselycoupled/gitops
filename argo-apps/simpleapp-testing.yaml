@@ -11,7 +11,7 @@ spec:
     path: charts/simpleapp
     helm:
       valueFiles:
-      - ../../environments/minikube.yaml
+      - ../../environments/testubg.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: example
