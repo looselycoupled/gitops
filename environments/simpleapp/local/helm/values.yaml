@@ -1,5 +1,5 @@
 env:
   - name: CONTENT
-    value: "KIND!"
+    value: "REGERTS!"
   - name: VERSION
     value: "v1.0"
